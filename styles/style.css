@@ -1,0 +1,67 @@
+body {
+    background-color:rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.gameframe{
+    height:900px;
+    background-color: black;
+}
+
+#healthbar {
+    position: relative;
+    top: 10px;
+    width: 60%;
+    height: 25px;
+    background-color: greenyellow;
+    margin: 10px 400px;
+    transition: all .5s;
+}
+
+#playButton {
+    display:block;
+    position: relative;
+    font-family: Impact;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.enemy {
+    position: absolute;
+    width: 150px;
+    height: 450px;
+    background-color: rgb(127, 255, 212);
+    bottom: -470px;
+    transition: .5s;
+}
+
+#enemy1 {left: 370px;}
+
+#enemy2 {left: 570px;}
+
+#enemy3 {left: 770px;}
+
+#enemy4 {left: 970px;}
+
+#enemy5 {left: 1170px;}
+
+#enemy6 {left: 1370px;}
+
+.enemy.visible {
+    bottom: 0px;
+}
+
+.enemy.visible.shooting {
+    transition:0.1s;
+    background-color: red;
+}
+
+.gameframe.gamelost {
+    background-color: rgba(240, 48, 48, 0.658);
+}
+
+.gameframe.gamewon {
+    background-color: rgb(25, 187, 25);
+}
